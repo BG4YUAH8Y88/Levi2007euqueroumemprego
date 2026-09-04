@@ -99,7 +99,7 @@ class carro:
 carro1 = carro('toyota','corolla','2020','preto')
 print(carro1.detalhes())
 '''
-class petshop:
+'''class petshop:
     def __init__(self,nome,idade):
         self.nome=nome
         self.idade=idade
@@ -117,4 +117,22 @@ print(petshop1.nome)
 print(petshop1.idade)
 print(petshop1.raça)
 
-petshop1.apresentar()
+petshop1.apresentar()'''
+
+
+class vaca:
+    def falar(self):
+        print("Muuuuuuuuuuuuuuuuuuu")
+        
+class cavalo:
+    def falar(self):
+        print("Hiiiiiiiiiiiiiiiiiiii")
+        
+class cachorro:
+    def falar(self):
+        print("Au Au Au Au Au Au")
+        
+def som_animal(animal):
+    animal.falar()
+
+som_animal(vaca())
