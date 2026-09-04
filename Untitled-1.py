@@ -104,17 +104,17 @@ class petshop:
         self.nome=nome
         self.idade=idade
     def detalhes(self):
-        def apresentar(self):
-            print(f"o nome dele é{self.nome}")
-            print(f"a idade dele é{self.idade}")
+        return f"{self.nome}{self.idade}"
+    def apresentar(self):
+        print(f"o nome dele é{self.nome}")
+        print(f"a idade dele é{self.idade}")
 class cachorro(petshop):
         def __init__(self,nome,idade,raça):
             super().__init__(nome,idade)
             self.raça = raça
-cachorro1 = cachorro('bruce',3,'pastor alemão')
-print(cachorro1.nome)
-print(cachorro1.idade)
-print(cachorro1.raça)
+petshop1 = cachorro('bruce',3,'pastor alemão')
+print(petshop1.nome)
+print(petshop1.idade)
+print(petshop1.raça)
 
-cachorro1.apresentar()
-    hiuri
+petshop1.apresentar()
